@@ -1,0 +1,154 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Vazer';
+    src: url('../fonts/vazir-Black.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazer';
+    direction: rtl;
+}
+
+body .main {
+    width: 100%;
+    position: relative;
+    max-width: 1800px;
+    background-color: #6495ed;
+    height: 2000px;
+    margin: 0% auto;
+}
+
+body .main header {
+    width: 100%;
+    max-width: 1800px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #476bad;
+    padding: 100px 30px 30px;
+    border-bottom: 3px solid #000;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    top: 0%;
+    z-index: 2;
+}
+
+body .main header.active {
+    top: -100%;
+}
+
+body .main header .infoBtn {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 450px;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    padding: 0% 10px;
+}
+
+body .main header .infoBtn li {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    font-size: 20px;
+    width: 25%;
+}
+
+body .main header .infoBtn li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+}
+
+body .main header .infoBtn li a:hover {
+    background-color: hsl(219, 99%, 31%);
+}
+
+body .main header .icon {
+    position: absolute;
+    left: 10px;
+    color: #000;
+    margin: auto auto;
+    top: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.bodyContant {
+    background-image: url(../image/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.bodyContant .btnNext {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    background-color: #fff;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+.bodyContant .btnNext svg {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+
+.bodyContant .btnNext svg:hover {
+    background-color: #000;
+    color: #fff;
+}
